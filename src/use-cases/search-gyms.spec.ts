@@ -57,8 +57,6 @@ describe('Search Gyms Use Case', () => {
       page: 2,
     })
 
-    console.log('gyms =>', gyms)
-
     expect(gyms).toHaveLength(2)
     expect(gyms).toEqual([
       expect.objectContaining({ title: 'Typescript Gym 21' }),
