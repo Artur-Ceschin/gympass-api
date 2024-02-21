@@ -33,7 +33,7 @@ app.setErrorHandler((error, _request, reply) => {
       .status(400)
       .send({ message: 'Validation error', issues: error.format })
   }
-
+  // Check ENV
   if (env.NODE_ENV !== 'production') {
     console.error(error)
   }
